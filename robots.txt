@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /vashhod/
+
+Sitemap: https://vashhod.online/sitemap.xml

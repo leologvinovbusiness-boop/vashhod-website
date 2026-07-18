@@ -1,0 +1,43 @@
+RewriteEngine On
+RewriteBase /
+
+# Redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.vashhod\.online$ [NC]
+RewriteRule ^(.*)$ https://vashhod.online/$1 [R=301,L]
+
+# Redirect HTTP to HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Redirect clean URLs to .html (e.g. /about -> /about.html)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ https://vashhod.online/$1.html [R=301,L]
+
+# Custom 404 page
+ErrorDocument 404 /404.html
+
+# Cache static files
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType text/css "access plus 1 week"
+  ExpiresByType application/javascript "access plus 1 week"
+  ExpiresByType font/woff2 "access plus 1 month"
+</IfModule>
+
+# Enable gzip compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript font/woff2
+</IfModule>
+
+# Deny access to backup and source files
+<FilesMatch "\.(backup|bak|old|orig|md|py|txt|log|sql|env|json|yml|yaml)$">
+  Require all denied
+</FilesMatch>
+
+# Hide directory listing
+Options -Indexes

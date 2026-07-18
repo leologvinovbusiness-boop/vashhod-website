@@ -1,0 +1,1488 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="geo.region" content="RU" />
+        <meta name="geo.placename" content="Russia" />
+        <meta name="geo.position" content="55.755826;37.6173" />
+        <meta name="ICBM" content="55.755826, 37.6173" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <title>Оформление и оплата | Ваш Ход</title>
+        <meta
+            name="description"
+            content="Оформите заказ и оплатите игру. Быстрое оформление и безопасная оплата."
+        />
+        <meta property="og:title" content="Оформление и оплата | Ваш Ход" />
+        <meta
+            property="og:description"
+            content="Оформите заказ и оплатите игру. Быстрое оформление и безопасная оплата."
+        />
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:url"
+            content="https://vashhod.online/checkout.html"
+        />
+        <meta
+            property="og:image"
+            content="https://vashhod.online/images/logo.png"
+        />
+        <link rel="stylesheet" href="fonts/fonts.css" />
+        <link rel="stylesheet" href="css/style.css?v=6" />
+
+        <!-- Bot protection (honeypot) -->
+        <style>
+            .hp-field {
+                position: absolute;
+                left: -9999px;
+                top: -9999px;
+                opacity: 0;
+                height: 0;
+                width: 0;
+                overflow: hidden;
+            }
+        </style>
+
+        <!-- Yandex.Metrika -->
+        <script>
+            window.yandexMetrikaId = "109822269";
+        </script>
+        <script src="js/metrika.js"></script>
+        <noscript
+            ><div>
+                src="https://mc.yandex.ru/watch/109822269"
+                    style="position: absolute; left: -9999px"
+                    alt=""
+                /></div
+        ></noscript>
+        <!-- /Yandex.Metrika -->
+        <link rel="canonical" href="https://vashhod.online/checkout.html" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header" id="header">
+            <div class="container nav">
+                <a
+                    href="index.html"
+                    class="logo"
+                    aria-label="Ваш Ход — на главную"
+                >
+                    <picture><source srcset="images/logo.webp" type="image/webp"><img src="images/logo.png"
+                        alt="Логотип Ваш Ход"
+                        width="56"
+                        height="56"
+                    /></picture>
+                    <div class="logo-text">
+                        <span class="logo-main">ВАШ ХОД</span>
+                        <span class="logo-sub">Настольные игры</span>
+                    </div>
+                </a>
+
+                <nav aria-label="Главное меню">
+                    <ul class="nav-menu" id="navMenu">
+                        <li>
+                            <a href="index.html#catalog" class="nav-link"
+                                >Каталог</a
+                            >
+                        </li>
+                        <li>
+                            <a href="index.html#features" class="nav-link"
+                                >Преимущества</a
+                            >
+                        </li>
+                        <li>
+                            <a href="about.html" class="nav-link">О нас</a>
+                        </li>
+                        <li>
+                            <a href="index.html#details" class="nav-link"
+                                >Подробнее</a
+                            >
+                        </li>
+                        <li>
+                            <a href="index.html#order" class="nav-link"
+                                >Как заказать</a
+                            >
+                        </li>
+                        <li>
+                            <a href="delivery.html" class="nav-link"
+                                >Оплата и доставка</a
+                            >
+                        </li>
+                        <li>
+                            <a href="faq.html" class="nav-link"
+                                >Частые<br />вопросы</a
+                            >
+                        </li>
+                        <li>
+                            <a href="index.html#contact" class="nav-link"
+                                >Контакты</a
+                            >
+                        </li>
+<li class="nav-cta">
+                            <a
+                                href="checkout.html"
+                                class="btn btn-primary"
+                                style="
+                                    padding: 0.65rem 1.5rem;
+                                    font-size: 1rem;
+                                    letter-spacing: 0.8px;
+                                "
+                                >Купить</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+
+                <a
+                    href="checkout.html"
+                    class="btn btn-primary desktop-cta"
+                    style="
+                        padding: 0.65rem 1.5rem;
+                        font-size: 1rem;
+                        letter-spacing: 0.8px;
+                    "
+                    >Купить</a
+                >
+
+                <button
+                    class="mobile-menu-btn"
+                    id="mobileMenuBtn"
+                    aria-label="Открыть меню"
+                    aria-expanded="false"
+                    aria-controls="navMenu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+        <main class="game-page">
+            <section class="game-hero">
+                <div class="container">
+                    <h1>Оформление и оплата</h1>
+                    <p>
+                        Выберите игры, заполните данные для доставки — и
+                        переходите к оплате.
+                    </p>
+                </div>
+            </section>
+
+            <section class="instructions-section">
+                <div class="container">
+                    <div
+                        class="contact-grid animate-on-scroll checkout-grid-single"
+                        id="checkoutGrid"
+                        style="align-items: start"
+                    >
+                        <!-- Order Form -->
+                        <div
+                            class="contact-form"
+                            id="orderFormBlock"
+                            style="margin: 0"
+                        >
+                            <h3
+                                style="
+                                    font-family: var(--font-display);
+                                    font-size: 1.4rem;
+                                    color: var(--color-dark);
+                                    margin-bottom: 1.25rem;
+                                "
+                            >
+                                📋 Данные для заказа
+                            </h3>
+
+                            <!-- Product Selection -->
+                            <div class="form-group">
+                                <label class="form-label"
+                                    >Выберите игры
+                                    <span
+                                        class="required"
+                                        aria-label="обязательно"
+                                        >*</span
+                                    ></label
+                                >
+                                <div
+                                    class="product-options"
+                                    id="productOptions"
+                                >
+                                    <label class="product-option">
+                                        <input
+                                            type="checkbox"
+                                            name="products"
+                                            value="Балансир"
+                                            data-price="2799"
+                                        />
+                                        <span
+                                            class="product-option-check"
+                                        ></span>
+                                        <span class="product-option-info">
+                                            <span class="product-option-name"
+                                                >Балансир</span
+                                            >
+                                            <span class="product-option-price"
+                                                >2 799 ₽
+                                                <small
+                                                    style="
+                                                        color: #c94b4b;
+                                                        font-size: 0.75rem;
+                                                        margin-left: 0.5rem;
+                                                    "
+                                                    >Осталось 12 шт.</small
+                                                ></span
+                                            >
+                                        </span>
+                                    </label>
+                                    <label class="product-option">
+                                        <input
+                                            type="checkbox"
+                                            name="products"
+                                            value="Пилос"
+                                            data-price="2990"
+                                        />
+                                        <span
+                                            class="product-option-check"
+                                        ></span>
+                                        <span class="product-option-info">
+                                            <span class="product-option-name"
+                                                >Пилос</span
+                                            >
+                                            <span class="product-option-price"
+                                                >2 990 ₽
+                                                <small
+                                                    style="
+                                                        color: #c94b4b;
+                                                        font-size: 0.75rem;
+                                                        margin-left: 0.5rem;
+                                                    "
+                                                    >Осталось 18 шт.</small
+                                                ></span
+                                            >
+                                        </span>
+                                    </label>
+                                    <label class="product-option">
+                                        <input
+                                            type="checkbox"
+                                            name="products"
+                                            value="Балансир + Пилос (комплект)"
+                                            data-price="5390"
+                                        />
+                                        <span
+                                            class="product-option-check"
+                                        ></span>
+                                        <span class="product-option-info">
+                                            <span class="product-option-name"
+                                                >Балансир + Пилос
+                                                (комплект)</span
+                                            >
+                                            <span class="product-option-price"
+                                                >5 390 ₽
+                                                <small
+                                                    style="
+                                                        color: #c94b4b;
+                                                        font-size: 0.75rem;
+                                                        margin-left: 0.5rem;
+                                                    "
+                                                    >Осталось 10 шт.</small
+                                                ></span
+                                            >
+                                        </span>
+                                    </label>
+                                    <label class="product-option">
+                                        <input
+                                            type="checkbox"
+                                            name="products"
+                                            value="Все 3 игры (комплект)"
+                                            data-price="8190"
+                                        />
+                                        <span
+                                            class="product-option-check"
+                                        ></span>
+                                        <span class="product-option-info">
+                                            <span class="product-option-name"
+                                                >Все 3 игры (комплект)</span
+                                            >
+                                            <span class="product-option-price"
+                                                >8 190 ₽
+                                                <small
+                                                    style="
+                                                        color: #c94b4b;
+                                                        font-size: 0.75rem;
+                                                        margin-left: 0.5rem;
+                                                    "
+                                                    >Осталось 8 шт.</small
+                                                ></span
+                                            >
+                                        </span>
+                                    </label>
+                                    <label class="product-option">
+                                        <input
+                                            type="checkbox"
+                                            name="products"
+                                            value="Эластик"
+                                            data-price="3099"
+                                        />
+                                        <span
+                                            class="product-option-check"
+                                        ></span>
+                                        <span class="product-option-info">
+                                            <span class="product-option-name"
+                                                >Эластик</span
+                                            >
+                                            <span class="product-option-price"
+                                                >3 099 ₽
+                                                <small
+                                                    style="
+                                                        color: #c94b4b;
+                                                        font-size: 0.75rem;
+                                                        margin-left: 0.5rem;
+                                                    "
+                                                    >Осталось 15 шт.</small
+                                                ></span
+                                            >
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="form-error" id="productsError">
+                                    Выберите хотя бы одну игру
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name" class="form-label"
+                                        >Ваше имя
+                                        <span
+                                            class="required"
+                                            aria-label="обязательно"
+                                            >*</span
+                                        ></label
+                                    >
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        class="form-control"
+                                        placeholder="Иван"
+                                        required
+                                    />
+                                    <div class="form-error" id="nameError">
+                                        Введите имя
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone" class="form-label"
+                                        >Телефон
+                                        <span
+                                            class="required"
+                                            aria-label="обязательно"
+                                            >*</span
+                                        ></label
+                                    >
+                                    <input
+                                        type="tel"
+                                        id="phone"
+                                        name="phone"
+                                        class="form-control"
+                                        placeholder="+7 (999) 000-00-00"
+                                        required
+                                    />
+                                    <div class="form-error" id="phoneError">
+                                        Введите корректный номер телефона
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email" class="form-label"
+                                        >Email</label
+                                    >
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        class="form-control"
+                                        placeholder="you@example.com"
+                                    />
+                                </div>
+                                <div class="form-group">
+                                    <label for="city" class="form-label"
+                                        >Город
+                                        <span
+                                            class="required"
+                                            aria-label="обязательно"
+                                            >*</span
+                                        ></label
+                                    >
+                                    <input
+                                        type="text"
+                                        id="city"
+                                        name="city"
+                                        class="form-control"
+                                        placeholder="Москва"
+                                        required
+                                    />
+                                    <div class="form-error" id="cityError">
+                                        Введите город
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="address" class="form-label"
+                                    >Адрес доставки
+                                    <span
+                                        class="required"
+                                        aria-label="обязательно"
+                                        >*</span
+                                    ></label
+                                >
+                                <textarea
+                                    id="address"
+                                    name="address"
+                                    class="form-textarea"
+                                    placeholder="Улица, дом, квартира, индекс..."
+                                    required
+                                ></textarea>
+                                <div class="form-error" id="addressError">
+                                    Введите адрес доставки
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label"
+                                    >Комментарий</label
+                                >
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    class="form-textarea"
+                                    placeholder="Удобное время звонка, особенности доставки..."
+                                ></textarea>
+                            </div>
+
+                            <!-- Honeypot: bots fill this, humans don't -->
+                            <div class="hp-field">
+                                <label for="website">Website</label>
+                                <input
+                                    type="text"
+                                    id="website"
+                                    name="website"
+                                    tabindex="-1"
+                                    autocomplete="off"
+                                />
+                            </div>
+
+                            <button
+                                type="button"
+                                class="btn btn-primary"
+                                style="
+                                    width: 100%;
+                                    padding: 1.1rem 1.5rem;
+                                    font-size: 1.05rem;
+                                    letter-spacing: 0.8px;
+                                "
+                                id="btnToPayment"
+                            >
+                                <span id="btnToPaymentText"
+                                    >Перейти к оплате →</span
+                                >
+                                <span
+                                    id="btnToPaymentLoader"
+                                    style="display: none"
+                                    >Оформление заказа...</span
+                                >
+                            </button>
+                            <p
+                                style="
+                                    font-size: 0.8rem;
+                                    color: var(--color-text-muted);
+                                    margin-top: 0.75rem;
+                                    text-align: center;
+                                "
+                            >
+                                Нажимая кнопку, вы соглашаетесь с
+                                <a
+                                    href="privacy.html"
+                                    target="_blank"
+                                    style="
+                                        color: var(--color-gold);
+                                        text-decoration: underline;
+                                    "
+                                    >Политикой конфиденциальности</a
+                                >
+                            </p>
+                        </div>
+
+                        <!-- Payment Methods (hidden initially) -->
+                        <div id="paymentBlock" class="payment-block-hidden">
+                            <h3
+                                style="
+                                    font-family: var(--font-display);
+                                    font-size: 1.4rem;
+                                    color: var(--color-dark);
+                                    margin-bottom: 1.25rem;
+                                "
+                            >
+                                💳 Оплата заказа
+                            </h3>
+
+                            <!-- Order Number -->
+                            <div
+                                class="instruction-block"
+                                style="
+                                    margin-bottom: 1.25rem;
+                                    text-align: center;
+                                    background: linear-gradient(
+                                        135deg,
+                                        rgba(74, 124, 89, 0.08),
+                                        rgba(74, 124, 89, 0.02)
+                                    );
+                                    border-left: 4px solid var(--color-success);
+                                "
+                            >
+                                <h4>✅ Заказ принят</h4>
+                                <p
+                                    style="
+                                        margin-top: 0.5rem;
+                                        font-size: 0.95rem;
+                                        color: var(--color-main);
+                                    "
+                                >
+                                    Номер вашего заказа:
+                                    <strong
+                                        id="orderNumber"
+                                        style="
+                                            font-family: var(--font-display);
+                                            font-size: 1.2rem;
+                                            color: var(--color-dark);
+                                        "
+                                        >—</strong
+                                    >
+                                    <button
+                                        type="button"
+                                        id="copyOrderNumberBtn"
+                                        class="btn btn-outline"
+                                        style="
+                                            margin-left: 0.5rem;
+                                            padding: 0.35rem 0.75rem;
+                                            font-size: 0.8rem;
+                                        "
+                                    >
+                                        📋 Скопировать
+                                    </button>
+                                    <span
+                                        id="copyOrderNumberMsg"
+                                        style="
+                                            color: var(--color-success);
+                                            font-size: 0.8rem;
+                                            opacity: 0;
+                                            transition: opacity 0.3s;
+                                            margin-left: 0.5rem;
+                                        "
+                                        >Скопировано!</span
+                                    >
+                                </p>
+                                <p
+                                    style="
+                                        font-size: 0.85rem;
+                                        color: var(--color-text-muted);
+                                        margin-top: 0.35rem;
+                                    "
+                                >
+                                    Сохраните номер — пришлём подтверждение на
+                                    указанный телефон.
+                                </p>
+                                <div
+                                    style="
+                                        margin-top: 0.75rem;
+                                        padding: 0.75rem;
+                                        background: rgba(201, 75, 75, 0.06);
+                                        border-radius: var(--radius-sm);
+                                        border: 1px dashed
+                                            rgba(201, 75, 75, 0.25);
+                                    "
+                                >
+                                    <p
+                                        style="
+                                            font-size: 0.85rem;
+                                            color: var(--color-dark);
+                                            font-weight: 600;
+                                        "
+                                    >
+                                        ⚠️ Важно: при оплате укажите номер
+                                        заказа в комментарии к переводу
+                                    </p>
+                                    <p
+                                        style="
+                                            font-size: 0.8rem;
+                                            color: var(--color-text-muted);
+                                            margin-top: 0.25rem;
+                                        "
+                                    >
+                                        Это поможет нам быстро найти ваш платёж
+                                        и отправить заказ.
+                                    </p>
+                                </div>
+                                <p
+                                    style="
+                                        margin-top: 0.75rem;
+                                        font-size: 0.85rem;
+                                        color: var(--color-text-muted);
+                                    "
+                                >
+                                    Остались вопросы?
+                                    <a
+                                        href="https://t.me/Vash_Hod"
+                                        target="_blank"
+                                        rel="noopener"
+                                        style="
+                                            color: #229ed9;
+                                            font-weight: 600;
+                                            text-decoration: underline;
+                                        "
+                                        >Напишите нам в Telegram</a
+                                    >
+                                </p>
+                            </div>
+
+                            <!-- Order Summary -->
+                            <div
+                                class="instruction-block"
+                                style="
+                                    margin-bottom: 1.25rem;
+                                    background: linear-gradient(
+                                        135deg,
+                                        rgba(201, 169, 110, 0.08),
+                                        rgba(201, 169, 110, 0.03)
+                                    );
+                                    border-left: 4px solid var(--color-gold);
+                                "
+                            >
+                                <h4>📦 Ваш заказ</h4>
+                                <div
+                                    id="orderSummary"
+                                    style="margin-top: 0.75rem"
+                                >
+                                    <!-- filled by JS -->
+                                </div>
+                                <div
+                                    class="order-total"
+                                    id="orderTotal"
+                                    style="
+                                        margin-top: 1rem;
+                                        padding-top: 0.75rem;
+                                        border-top: 1px dashed
+                                            var(--color-border);
+                                        font-family: var(--font-display);
+                                        font-size: 1.3rem;
+                                        color: var(--color-dark);
+                                    "
+                                >
+                                    Итого: 0 ₽
+                                </div>
+                            </div>
+
+                            <div
+                                class="instruction-block"
+                                style="margin-bottom: 1.25rem"
+                            >
+                                <h4>🚚 Доставка</h4>
+                                <p
+                                    style="
+                                        font-size: 0.9rem;
+                                        color: var(--color-text-muted);
+                                        margin-top: 0.5rem;
+                                    "
+                                >
+                                    После оплаты мы отправим заказ удобным
+                                    способом:
+                                </p>
+                                <ul
+                                    style="
+                                        font-size: 0.9rem;
+                                        color: var(--color-main);
+                                        margin-top: 0.5rem;
+                                        padding-left: 1.25rem;
+                                    "
+                                >
+                                    <li>Почта России — от 350 ₽</li>
+                                    <li>СДЭК — от 450 ₽</li>
+                                    <li>Яндекс Доставка — от 350 ₽</li>
+                                    <li>Самовывоз — Москва/МО</li>
+                                </ul>
+                                <p
+                                    style="
+                                        font-size: 0.85rem;
+                                        color: var(--color-text-muted);
+                                        margin-top: 0.5rem;
+                                    "
+                                >
+                                    Точную стоимость доставки уточним после
+                                    оформления.
+                                </p>
+                            </div>
+
+                            <div
+                                class="instruction-block"
+                                style="
+                                    margin-bottom: 1.25rem;
+                                    position: relative;
+                                    background: url('images/balansir/main.jpg')
+                                        center / cover no-repeat;
+                                    border: none;
+                                    overflow: hidden;
+                                "
+                            >
+                                <div
+                                    style="
+                                        position: absolute;
+                                        inset: 0;
+                                        background: rgba(45, 35, 30, 0.78);
+                                        backdrop-filter: blur(2px);
+                                    "
+                                ></div>
+                                <div style="position: relative; z-index: 1">
+                                    <h4 style="color: #fff">💰 Оплата</h4>
+                                    <p style="color: #fff">
+                                        Сумма к оплате:
+                                        <strong id="yooAmount">0 ₽</strong>
+                                    </p>
+                                    <a
+                                        id="yooPayLink"
+                                        href="#"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="btn btn-gold"
+                                        style="
+                                            width: 100%;
+                                            text-decoration: none;
+                                            display: none;
+                                        "
+                                    >
+                                        Оплатить —
+                                        <span id="yooPayAmount">0 ₽</span>
+                                    </a>
+                                    <p
+                                        id="yooNoSelection"
+                                        style="
+                                            font-size: 0.85rem;
+                                            color: rgba(255, 255, 255, 0.85);
+                                            margin-top: 0.5rem;
+                                            display: none;
+                                        "
+                                    >
+                                        Выберите игры выше, чтобы увидеть
+                                        кнопку оплаты.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button
+                                type="button"
+                                class="btn btn-primary"
+                                style="width: 100%; margin-bottom: 0.75rem"
+                                id="btnPaymentDone"
+                            >
+                                ✅ Я оплатил
+                            </button>
+                            <p
+                                style="
+                                    font-size: 0.8rem;
+                                    color: var(--color-text-muted);
+                                    margin-bottom: 1.25rem;
+                                    text-align: center;
+                                "
+                            >
+                                Нажмите после завершения оплаты — мы получим
+                                уведомление о заказе.
+                            </p>
+
+                            <button
+                                type="button"
+                                class="btn btn-outline"
+                                style="width: 100%"
+                                id="btnEditOrder"
+                            >
+                                ← Изменить данные заказа
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="btn-group" style="margin-top: 2rem">
+                        <a href="index.html" class="btn btn-outline"
+                            >← Вернуться в каталог</a
+                        >
+                        <a href="delivery.html" class="btn btn-outline"
+                            >Подробнее о доставке</a
+                        >
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <picture><source srcset="images/logo.webp" type="image/webp"><img src="images/logo.png"
+                            alt="Логотип Ваш Ход"
+                            loading="lazy"
+                        /></picture>
+                        <p>
+                            Деревянные настольные игры ручной работы. Создаём
+                            эмоции, которые остаются на годы.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="footer-title">Каталог</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html#catalog">Балансир</a></li>
+                            <li><a href="index.html#catalog">Пилос</a></li>
+                            <li><a href="index.html#catalog">Эластик</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="footer-title">Информация</h4>
+                        <ul class="footer-links">
+                            <li>
+                                <a href="index.html#features">Преимущества</a>
+                            </li>
+                            <li><a href="about.html">О нас</a></li>
+                            <li>
+                                <a href="index.html#details"
+                                    >Подробнее об играх</a
+                                >
+                            </li>
+                            <li>
+                                <a href="delivery.html">Оплата и доставка</a>
+                            </li>
+                            <li><a href="faq.html">Частые вопросы</a></li>
+                            <li><a href="index.html#contact">Контакты</a></li>
+                            <li>
+                                <a href="privacy.html"
+                                    >Политика конфиденциальности</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="footer-title">Связь</h4>
+                        <ul class="footer-links">
+                            <li>
+                                <a href="index.html#contact">Купить</a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://t.me/Vash_Hod"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >Telegram</a
+                                >
+                            </li>
+                            <li><span>Доставка по всей России</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>
+                        © 2026 Ваш Ход. Деревянные настольные игры ручной
+                        работы.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/main.js?v=6"></script>
+        <script>
+            (function () {
+                "use strict";
+
+                // =========================================================
+                // НАСТРОЙКИ: замените на свои данные
+                // =========================================================
+                var YOOMONEY_WALLET = "4100119548699509"; // Номер кошелька для оплаты
+
+                // Google Apps Script endpoint for order submission
+                var GOOGLE_FORM_ACTION =
+                    "https://script.google.com/macros/s/AKfycbyq2l3rEPfrVmhz2Qi1ck9Wy7uIXw7vMiDiEgnyhxK3W8QBBnaI6oB_K0iNQKY1lVOgiw/exec";
+
+                // Shared secret required by the Apps Script endpoint.
+                // The endpoint handles both Google Sheets logging and Telegram notifications.
+                var ORDER_SECRET = "IDy2Y0vHsIR-ad8UqV1W3v4re4w-NLYX";
+
+                // Elements
+                var orderFormBlock = document.getElementById("orderFormBlock");
+                var paymentBlock = document.getElementById("paymentBlock");
+                var btnToPayment = document.getElementById("btnToPayment");
+                var btnToPaymentText =
+                    document.getElementById("btnToPaymentText");
+                var btnToPaymentLoader =
+                    document.getElementById("btnToPaymentLoader");
+                var btnEditOrder = document.getElementById("btnEditOrder");
+                var orderSummary = document.getElementById("orderSummary");
+                var orderTotal = document.getElementById("orderTotal");
+                var orderNumber = document.getElementById("orderNumber");
+                var yooAmount = document.getElementById("yooAmount");
+                var yooPayLink = document.getElementById("yooPayLink");
+
+                // Custom alert modal
+                var customAlertOverlay =
+                    document.getElementById("customAlertOverlay");
+                var customAlertMessage =
+                    document.getElementById("customAlertMessage");
+                var customAlertClose =
+                    document.getElementById("customAlertClose");
+
+                function showCustomAlert(message) {
+                    if (
+                        customAlertOverlay &&
+                        customAlertMessage &&
+                        customAlertClose
+                    ) {
+                        customAlertMessage.textContent = message;
+                        customAlertOverlay.style.display = "flex";
+                        customAlertClose.focus();
+                    } else {
+                        window.alert(message);
+                    }
+                }
+
+                function hideCustomAlert() {
+                    if (customAlertOverlay) {
+                        customAlertOverlay.style.display = "none";
+                    }
+                }
+
+                if (customAlertClose) {
+                    customAlertClose.addEventListener("click", hideCustomAlert);
+                }
+                if (customAlertOverlay) {
+                    customAlertOverlay.addEventListener("click", function (e) {
+                        if (e.target === customAlertOverlay) {
+                            hideCustomAlert();
+                        }
+                    });
+                }
+
+                // Form fields
+                var productCheckboxes = document.querySelectorAll(
+                    'input[name="products"]',
+                );
+                var nameInput = document.getElementById("name");
+                var phoneInput = document.getElementById("phone");
+                var emailInput = document.getElementById("email");
+                var cityInput = document.getElementById("city");
+                var addressInput = document.getElementById("address");
+                var messageInput = document.getElementById("message");
+
+                function showError(id, show) {
+                    var el = document.getElementById(id);
+                    if (el) {
+                        el.style.display = show ? "block" : "none";
+                    }
+                }
+
+                function validateForm() {
+                    var isValid = true;
+
+                    var selectedProducts = document.querySelectorAll(
+                        'input[name="products"]:checked',
+                    );
+                    if (selectedProducts.length === 0) {
+                        showError("productsError", true);
+                        isValid = false;
+                    } else {
+                        showError("productsError", false);
+                    }
+
+                    if (!nameInput.value.trim()) {
+                        showError("nameError", true);
+                        nameInput.classList.add("is-invalid");
+                        isValid = false;
+                    } else {
+                        showError("nameError", false);
+                        nameInput.classList.remove("is-invalid");
+                    }
+
+                    var phoneDigits = phoneInput.value.replace(/\D/g, "");
+                    if (!phoneDigits.match(/^7\d{10}$/)) {
+                        showError("phoneError", true);
+                        phoneInput.classList.add("is-invalid");
+                        isValid = false;
+                    } else {
+                        showError("phoneError", false);
+                        phoneInput.classList.remove("is-invalid");
+                    }
+
+                    if (!cityInput.value.trim()) {
+                        showError("cityError", true);
+                        cityInput.classList.add("is-invalid");
+                        isValid = false;
+                    } else {
+                        showError("cityError", false);
+                        cityInput.classList.remove("is-invalid");
+                    }
+
+                    if (!addressInput.value.trim()) {
+                        showError("addressError", true);
+                        addressInput.classList.add("is-invalid");
+                        isValid = false;
+                    } else {
+                        showError("addressError", false);
+                        addressInput.classList.remove("is-invalid");
+                    }
+
+                    return isValid;
+                }
+
+                function getSelectedProducts() {
+                    var products = [];
+                    var names = [];
+                    productCheckboxes.forEach(function (cb) {
+                        if (cb.checked) {
+                            products.push({
+                                name: cb.value,
+                                price: parseInt(
+                                    cb.getAttribute("data-price"),
+                                    10,
+                                ),
+                            });
+                            names.push(cb.value);
+                        }
+                    });
+                    return {
+                        items: products,
+                        names: names,
+                        total: products.reduce(function (s, p) {
+                            return s + p.price;
+                        }, 0),
+                    };
+                }
+
+                function generateOrderId() {
+                    var now = new Date();
+                    var pad = function (n) {
+                        return n < 10 ? "0" + n : n;
+                    };
+                    return (
+                        "VH-" +
+                        now.getFullYear() +
+                        pad(now.getMonth() + 1) +
+                        pad(now.getDate()) +
+                        "-" +
+                        Math.floor(1000 + Math.random() * 9000)
+                    );
+                }
+
+                function buildSummary() {
+                    var data = getSelectedProducts();
+                    var html = "";
+
+                    data.items.forEach(function (p) {
+                        html +=
+                            '<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.5rem; font-size:0.95rem;">';
+                        html +=
+                            '<span style="color:var(--color-main);">' +
+                            p.name +
+                            "</span>";
+                        html +=
+                            '<span style="font-weight:600; color:var(--color-dark);">' +
+                            p.price.toLocaleString("ru-RU") +
+                            " ₽</span>";
+                        html += "</div>";
+                    });
+
+                    orderSummary.innerHTML =
+                        html ||
+                        '<p style="color:var(--color-text-muted); font-size:0.9rem;">Нет выбранных товаров</p>';
+                    orderTotal.textContent =
+                        "Итого: " + data.total.toLocaleString("ru-RU") + " ₽";
+                    yooAmount.textContent =
+                        data.total.toLocaleString("ru-RU") + " ₽";
+
+                    // Update YuMoney link (if element exists)
+                    if (yooPayLink) {
+                        if (
+                            YOOMONEY_WALLET.indexOf("YOUR_") !== 0 &&
+                            data.total > 0
+                        ) {
+                            yooPayLink.href =
+                                "https://yoomoney.ru/quickpay/confirm?receiver=" +
+                                encodeURIComponent(YOOMONEY_WALLET) +
+                                "&quickpay-form=button&paymentType=AC&sum=" +
+                                data.total +
+                                "&label=" +
+                                encodeURIComponent(currentOrderId) +
+                                "&successURL=" +
+                                encodeURIComponent(
+                                    "https://vashhod.online/thanks.html",
+                                ) +
+                                "&comment=" +
+                                encodeURIComponent(
+                                    "Заказ " +
+                                        currentOrderId +
+                                        " — " +
+                                        data.names.join(", "),
+                                );
+                            yooPayLink.style.display = "inline-flex";
+                            var yooPayAmount =
+                                document.getElementById("yooPayAmount");
+                            if (yooPayAmount)
+                                yooPayAmount.textContent =
+                                    data.total.toLocaleString("ru-RU") + " ₽";
+                        } else {
+                            yooPayLink.style.display = "none";
+                        }
+                    }
+
+                    return data.total;
+                }
+
+                function sendToGoogleForms(params) {
+                    try {
+                        var xhr = new XMLHttpRequest();
+                        xhr.open("POST", GOOGLE_FORM_ACTION, true);
+                        // Use text/plain to avoid browser CORS preflight
+                        xhr.setRequestHeader(
+                            "Content-Type",
+                            "text/plain",
+                        );
+                        xhr.timeout = 15000;
+
+                        xhr.onload = function () {
+                            console.log(
+                                "[Order] Status:",
+                                xhr.status,
+                                "Response:",
+                                xhr.responseText,
+                            );
+                        };
+
+                        xhr.onerror = function () {
+                            console.error(
+                                "[Order] Network error: cannot reach Google Apps Script",
+                            );
+                        };
+
+                        xhr.ontimeout = function () {
+                            console.error("[Order] Request timeout");
+                        };
+
+                        xhr.send(JSON.stringify(params));
+                    } catch (e) {
+                        console.error("[Order] Send failed:", e);
+                    }
+                }
+
+                var currentOrderId = "";
+                var currentFormParams = null;
+
+                function submitOrder() {
+                    if (!validateForm()) {
+                        var firstError =
+                            orderFormBlock.querySelector(".is-invalid");
+                        if (firstError) {
+                            firstError.focus();
+                            firstError.scrollIntoView({
+                                behavior: "smooth",
+                                block: "center",
+                            });
+                        }
+                        return;
+                    }
+
+                    // Honeypot check
+                    var honeypot = document.getElementById("website");
+                    if (honeypot && honeypot.value) {
+                        return;
+                    }
+
+                    currentOrderId = generateOrderId();
+                    var data = getSelectedProducts();
+
+                    // Show loader
+                    btnToPayment.disabled = true;
+                    btnToPaymentText.style.display = "none";
+                    btnToPaymentLoader.style.display = "inline";
+
+                    // Prepare order payload for Google Apps Script
+                    var commentValue = messageInput.value.trim() || "";
+                    var orderPrefix = "[" + currentOrderId + "]";
+                    var fullComment = commentValue
+                        ? orderPrefix + " " + commentValue
+                        : orderPrefix;
+
+                    var formParams = {
+                        secret: ORDER_SECRET,
+                        name: nameInput.value.trim(),
+                        phone: phoneInput.value.trim(),
+                        email: emailInput.value.trim() || "",
+                        city: cityInput.value.trim(),
+                        address: addressInput.value.trim(),
+                        games: data.names.join(", "),
+                        total: data.total.toLocaleString("ru-RU") + " ₽",
+                        comment: fullComment,
+                    };
+
+                    function showPaymentBlock() {
+                        orderNumber.textContent = currentOrderId;
+
+                        buildSummary();
+
+                        // Save order info for the thanks page
+                        try {
+                            localStorage.setItem(
+                                "vashhod_order",
+                                JSON.stringify({
+                                    id: currentOrderId,
+                                    amount: data.total,
+                                    games: data.names.join(", "),
+                                    date: new Date().toLocaleString("ru-RU"),
+                                }),
+                            );
+                        } catch (e) {
+                            // localStorage may be unavailable
+                        }
+
+
+
+                        orderFormBlock.style.display = "none";
+
+                        // Keep single-column centered layout
+                        var grid = orderFormBlock.parentElement;
+                        if (grid) {
+                            grid.classList.add("checkout-grid-single");
+                            grid.style.display = "grid";
+                            grid.style.gridTemplateColumns = "";
+                        }
+
+                        paymentBlock.classList.remove("payment-block-hidden");
+                        paymentBlock.classList.add("payment-block-visible");
+                        paymentBlock.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                        });
+
+                        btnToPayment.disabled = false;
+                        btnToPaymentText.style.display = "inline";
+                        btnToPaymentLoader.style.display = "none";
+
+                        // Form reset after successful validation
+                    }
+
+                    // Store form params for later submission after payment
+                    currentFormParams = formParams;
+
+                    // Show payment block immediately
+                    showPaymentBlock();
+
+                    // Send initial order to Google Forms (so seller sees it even if buyer forgets to click "I paid")
+                    // Telegram notification should be handled by the Google Apps Script endpoint.
+                    sendToGoogleForms(formParams);
+                }
+
+                function showForm() {
+                    paymentBlock.classList.remove("payment-block-visible");
+                    paymentBlock.classList.add("payment-block-hidden");
+
+                    // Restore single-column centered layout
+                    var grid = orderFormBlock.parentElement;
+                    if (grid) {
+                        grid.classList.add("checkout-grid-single");
+                        grid.style.display = "grid";
+                        grid.style.gridTemplateColumns = "";
+                    }
+
+                    orderFormBlock.style.display = "block";
+                    orderFormBlock.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                    });
+                }
+
+                if (btnToPayment) {
+                    btnToPayment.addEventListener("click", submitOrder);
+                }
+
+                if (btnEditOrder) {
+                    btnEditOrder.addEventListener("click", showForm);
+                }
+
+                // Copy order number
+                var copyOrderNumberBtn =
+                    document.getElementById("copyOrderNumberBtn");
+                var copyOrderNumberMsg =
+                    document.getElementById("copyOrderNumberMsg");
+                if (copyOrderNumberBtn) {
+                    copyOrderNumberBtn.addEventListener("click", function () {
+                        var text =
+                            currentOrderId || orderNumber.textContent || "";
+                        if (!text || text === "—") return;
+                        var copied = false;
+                        if (
+                            navigator.clipboard &&
+                            navigator.clipboard.writeText
+                        ) {
+                            navigator.clipboard
+                                .writeText(text)
+                                .then(function () {
+                                    copied = true;
+                                })
+                                .catch(function () {
+                                    copied = false;
+                                });
+                        }
+                        if (!copied) {
+                            var textarea = document.createElement("textarea");
+                            textarea.value = text;
+                            textarea.style.position = "fixed";
+                            textarea.style.opacity = "0";
+                            document.body.appendChild(textarea);
+                            textarea.select();
+                            try {
+                                document.execCommand("copy");
+                                copied = true;
+                            } catch (e) {
+                                copied = false;
+                            }
+                            document.body.removeChild(textarea);
+                        }
+                        if (copied && copyOrderNumberMsg) {
+                            copyOrderNumberMsg.style.opacity = "1";
+                            setTimeout(function () {
+                                copyOrderNumberMsg.style.opacity = "0";
+                            }, 2000);
+                        }
+                    });
+                }
+
+                // Clear errors on input
+                [nameInput, cityInput, addressInput].forEach(function (input) {
+                    if (input) {
+                        input.addEventListener("input", function () {
+                            this.classList.remove("is-invalid");
+                            var errorId = this.id + "Error";
+                            showError(errorId, false);
+                        });
+                    }
+                });
+
+                if (phoneInput) {
+                    phoneInput.addEventListener("input", function () {
+                        this.classList.remove("is-invalid");
+                        showError("phoneError", false);
+                    });
+                }
+
+                productCheckboxes.forEach(function (cb) {
+                    cb.addEventListener("change", function () {
+                        showError("productsError", false);
+                    });
+                });
+
+                // "I paid" button handler (if present)
+                var btnPaymentDone = document.getElementById("btnPaymentDone");
+                if (btnPaymentDone) {
+                    btnPaymentDone.addEventListener("click", function () {
+                        if (!currentOrderId) {
+                            showCustomAlert("Сначала оформите заказ.");
+                            return;
+                        }
+                        if (!currentFormParams) {
+                            showCustomAlert(
+                                "Данные заказа не найдены. Пожалуйста, оформите заказ заново.",
+                            );
+                            return;
+                        }
+                        // Send order to Google Apps Script with paid status
+                        var paidComment =
+                            currentFormParams.comment + " ✅ ОПЛАЧЕНО";
+                        currentFormParams.comment = paidComment;
+                        sendToGoogleForms(currentFormParams);
+                        btnPaymentDone.disabled = true;
+                        btnPaymentDone.textContent =
+                            "✅ Уведомление отправлено";
+                        showCustomAlert(
+                            "Спасибо! Мы проверим оплату по номеру заказа " +
+                                currentOrderId +
+                                " и свяжемся с вами.",
+                        );
+                    });
+                }
+            })();
+        </script>
+
+        <!-- Custom Alert Modal -->
+        <div
+            id="customAlertOverlay"
+            style="
+                display: none;
+                position: fixed;
+                inset: 0;
+                background: rgba(0, 0, 0, 0.45);
+                z-index: 9999;
+                align-items: center;
+                justify-content: center;
+                padding: 1rem;
+            "
+        >
+            <div
+                style="
+                    background: #fff;
+                    padding: 2rem;
+                    border-radius: var(--radius-md, 12px);
+                    max-width: 420px;
+                    width: 100%;
+                    text-align: center;
+                    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+                "
+            >
+                <div
+                    style="
+                        width: 64px;
+                        height: 64px;
+                        margin: 0 auto 1rem;
+                        background: rgba(74, 124, 89, 0.12);
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 2rem;
+                    "
+                >
+                    ✅
+                </div>
+                <p
+                    id="customAlertMessage"
+                    style="
+                        margin-bottom: 1.5rem;
+                        color: var(--color-dark, #3d352e);
+                        font-size: 1.05rem;
+                        line-height: 1.6;
+                    "
+                ></p>
+                <button
+                    type="button"
+                    id="customAlertClose"
+                    class="btn btn-primary"
+                >
+                    Закрыть
+                </button>
+            </div>
+        </div>
+    </body>
+</html>

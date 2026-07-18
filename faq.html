@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <title>Частые вопросы | Ваш Ход</title>
+  <meta name="description" content="Ответы на частые вопросы о настольных играх Ваш Ход: заказ, оплата, доставка, комплектация и правила.">
+  <meta property="og:title" content="Частые вопросы | Ваш Ход">
+  <meta property="og:description" content="Ответы на частые вопросы о настольных играх Ваш Ход.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vashhod.online/faq.html">
+  <meta property="og:image" content="https://vashhod.online/images/logo.png">
+  <link rel="stylesheet" href="fonts/fonts.css" />
+  <link rel="stylesheet" href="css/style.css?v=6">
+
+<!-- Yandex.Metrika -->
+<script>window.yandexMetrikaId = '109822269';</script>
+<script src="js/metrika.js"></script>
+<noscript><div>src="https://mc.yandex.ru/watch/109822269" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika -->
+    <link rel="canonical" href="https://vashhod.online/faq.html" />
+  <style>
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .faq-item {
+      background: var(--color-surface, #fff);
+      border: 1px solid var(--color-border, #e8e0d5);
+      border-radius: var(--radius-md, 12px);
+      overflow: hidden;
+    }
+    .faq-question {
+      width: 100%;
+      padding: 1.25rem 1.5rem;
+      text-align: left;
+      background: none;
+      border: none;
+      font-family: var(--font-display, inherit);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--color-text, #3d352e);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+    .faq-question::after {
+      content: '+';
+      font-size: 1.5rem;
+      line-height: 1;
+      color: var(--color-primary, #c75b39);
+      flex-shrink: 0;
+    }
+    .faq-item.active .faq-question::after {
+      content: '−';
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      padding: 0 1.5rem;
+      color: var(--color-text-secondary, #5e564d);
+      line-height: 1.7;
+    }
+    .faq-item.active .faq-answer {
+      max-height: 500px;
+      padding-bottom: 1.5rem;
+    }
+    .faq-answer p + p {
+      margin-top: 0.75rem;
+    }
+    .faq-answer ul {
+      margin: 0.75rem 0 0 1.25rem;
+    }
+    .faq-answer li + li {
+      margin-top: 0.4rem;
+    }
+  </style>
+
+        <meta name="geo.region" content="RU" />
+        <meta name="geo.placename" content="Russia" />
+        <meta name="geo.position" content="55.755826;37.6173" />
+        <meta name="ICBM" content="55.755826, 37.6173" />
+    </head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="index.html" class="logo" aria-label="Ваш Ход — на главную">
+        <picture><source srcset="images/logo.webp" type="image/webp"><img src="images/logo.png" alt="Логотип Ваш Ход" width="56" height="56"></picture>
+        <div class="logo-text">
+          <span class="logo-main">ВАШ ХОД</span>
+          <span class="logo-sub">Настольные игры</span>
+        </div>
+      </a>
+
+      <nav aria-label="Главное меню">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html#catalog" class="nav-link">Каталог</a></li>
+          <li><a href="index.html#features" class="nav-link">Преимущества</a></li>
+            <li><a href="about.html" class="nav-link">О нас</a></li>
+          <li><a href="index.html#details" class="nav-link">Подробнее</a></li>
+          <li><a href="index.html#order" class="nav-link">Как заказать</a></li>
+          <li><a href="wiki.html" class="nav-link">Как играть</a></li>
+          <li><a href="faq.html" class="nav-link">Частые<br>вопросы</a></li>
+<li class="nav-cta"><a href="checkout.html" class="btn btn-primary" style="padding:0.65rem 1.5rem;font-size:1rem;letter-spacing:0.8px;">Купить</a></li>
+        </ul>
+      </nav>
+
+      <a href="checkout.html" class="btn btn-primary desktop-cta" style="padding:0.65rem 1.5rem;font-size:1rem;letter-spacing:0.8px;">Купить</a>
+<button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Открыть меню" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="game-page">
+    <section class="game-hero">
+      <div class="container">
+        <h1>Частые вопросы</h1>
+        <p>Ответы на самые популярные вопросы о наших играх, заказе и доставке.</p>
+      </div>
+    </section>
+
+    <section class="instructions-section">
+      <div class="container">
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" type="button">Какие игры есть в каталоге?</button>
+            <div class="faq-answer">
+              <p>Сейчас в линейке три авторские деревянные игры ручной работы:</p>
+              <ul>
+                <li><strong>Балансир</strong> — игра на равновесие и тактику с качающейся платформой и камушками.</li>
+                <li><strong>Пилос</strong> — стратегическая игра с шариками и пирамидой: кто последним разместит шарик наверху, тот победил.</li>
+                <li><strong>Эластик</strong> — динамичная игра на ловкость и реакцию на 2 человека с резинкой и шайбами.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">Из чего сделаны игры?</button>
+            <div class="faq-answer">
+              <p>Все игры изготовлены вручную из натурального дерева. После обработки детали пропитаны льняным маслом и медовым воском — это безопасно для детей и приятно на ощупь.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">С какого возраста можно играть?</button>
+            <div class="faq-answer">
+              <p>Рекомендуемый возраст — от 6 лет. В комплекте нет мелких деталей, но для самых маленьких лучше играть вместе со взрослыми.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">Как оформить заказ?</button>
+            <div class="faq-answer">
+              <p>Выберите игру на главной странице или в разделе «Каталог», нажмите «Купить», заполните контакты и адрес доставки, затем оплатите онлайн. После оплаты мы свяжемся с вами для подтверждения и отправим заказ.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">Какие способы оплаты доступны?</button>
+            <div class="faq-answer">
+              <p>Оплата происходит онлайн через защищённую платёжную форму ЮMoney. Мы не храним данные ваших карт — все платежи проходят на защищённой странице Яндекса.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">Какая доставка и сколько она стоит?</button>
+            <div class="faq-answer">
+              <p>Доставляем по всей России:</p>
+              <ul>
+                <li><strong>Почта России</strong> — от 300 ₽, 5–14 дней.</li>
+                <li><strong>СДЭК</strong> — до пункта выдачи от 350 ₽, 3–7 дней.</li>
+                <li><strong>Яндекс Доставка</strong> — до пункта выдачи от 250 ₽, 2–5 дней.</li>
+                <li><strong>Самовывоз</strong> — по договорённости (Москва/МО).</li>
+              </ul>
+              <p>Точная стоимость рассчитывается при оформлении заказа.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">Можно ли заказать игру в подарок?</button>
+            <div class="faq-answer">
+              <p>Да, все игры упакованы в крафтовую коробку — отлично подходят для подарка. При желании можем добавить небольшую открытку или записку — напишите об этом при оформлении заказа.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">Где посмотреть правила?</button>
+            <div class="faq-answer">
+              <p>Полные правила для каждой игры собраны на странице <a href="wiki.html">Как играть</a>. Там же есть комплектация, подготовка и советы от мастера.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">Что делать, если пришёл брак или не хватает деталей?</button>
+            <div class="faq-answer">
+              <p>Перед отправкой мы проверяем комплектацию и делаем фотоотчёт. Если всё же что-то пришло с дефектом или не хватает деталей — напишите нам в Telegram <a href="https://t.me/Vash_Hod" target="_blank" rel="noopener">@Vash_Hod</a>, и мы бесплатно заменим или дособерём комплект.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">Есть ли у вас оптовые условия?</button>
+            <div class="faq-answer">
+              <p>Да, для магазинов, корпоративных заказов и подарков партнёрам можем предложить специальные условия. Пишите в Telegram <a href="https://t.me/Vash_Hod" target="_blank" rel="noopener">@Vash_Hod</a> — обсудим детали.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="instruction-block" style="margin-top:3rem;text-align:center;">
+          <h3>Не нашли ответ?</h3>
+          <p>Напишите нам в Telegram — ответим быстро и поможем с выбором.</p>
+          <div class="btn-group" style="margin-top:1.5rem;justify-content:center;">
+            <a href="https://t.me/Vash_Hod" class="btn btn-primary" target="_blank" rel="noopener">Написать в Telegram</a>
+            <a href="index.html" class="btn btn-outline">← На главную</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <picture><source srcset="images/logo.webp" type="image/webp"><img src="images/logo.png" alt="Логотип Ваш Ход" loading="lazy"></picture>
+          <p>Деревянные настольные игры ручной работы. Создаём эмоции, которые остаются на годы.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Каталог</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#catalog">Балансир</a></li>
+            <li><a href="index.html#catalog">Пилос</a></li>
+            <li><a href="index.html#catalog">Эластик</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Информация</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#features">Преимущества</a></li>
+                            <li><a href="about.html">О нас</a></li>
+            <li><a href="index.html#details">Подробнее об играх</a></li>
+            <li><a href="delivery.html">Оплата и доставка</a></li>
+            <li><a href="wiki.html">Как играть</a></li>
+            <li><a href="faq.html">Частые вопросы</a></li>
+            <li><a href="index.html#contact">Контакты</a></li>
+            <li><a href="privacy.html">Политика конфиденциальности</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Связь</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#contact">Купить</a></li>
+            <li><a href="https://t.me/Vash_Hod" target="_blank" rel="noopener">Telegram</a></li>
+            <li><span>Доставка по всей России</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Ваш Ход. Деревянные настольные игры ручной работы.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=6"></script>
+  <script>
+    document.querySelectorAll('.faq-question').forEach(function(button) {
+      button.addEventListener('click', function() {
+        var item = this.parentElement;
+        var isActive = item.classList.contains('active');
+        document.querySelectorAll('.faq-item').forEach(function(el) {
+          el.classList.remove('active');
+        });
+        if (!isActive) {
+          item.classList.add('active');
+        }
+      });
+    });
+  </script></body>
+</html>
