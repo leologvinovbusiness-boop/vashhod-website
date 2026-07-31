@@ -1,33 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <title>Оплата и доставка | Ваш Ход</title>
-  <meta name="description" content="Условия оплаты и доставки настольных игр ручной работы Ваш Ход. Оплата онлайн, доставка по России.">
-  <meta property="og:title" content="Оплата и доставка | Ваш Ход">
-  <meta property="og:description" content="Условия оплаты и доставки настольных игр ручной работы Ваш Ход. Оплата онлайн, доставка по России.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://vashhod.online/delivery.html">
-  <meta property="og:image" content="https://vashhod.online/images/logo.png">
-  <link rel="stylesheet" href="fonts/fonts.css" />
-<link rel="stylesheet" href="css/style.css?v=6">
-
-<!-- Yandex.Metrika -->
-<script>window.yandexMetrikaId = '109822269';</script>
-<script src="js/metrika.js"></script>
-<noscript><div>src="https://mc.yandex.ru/watch/109822269" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika -->
-    <link rel="canonical" href="https://vashhod.online/delivery.html" />
-
+    <meta charset="UTF-8" />
         <meta name="geo.region" content="RU" />
         <meta name="geo.placename" content="Russia" />
         <meta name="geo.position" content="55.755826;37.6173" />
         <meta name="ICBM" content="55.755826, 37.6173" />
-    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <title>Оплата и доставка — Ваш Ход</title>
+    <meta name="description" content="Условия оплаты и доставки настольных игр Ваш Ход. Почта России, СДЭК, Яндекс Доставка, Boxberry, самовывоз." />
+    <link rel="canonical" href="https://vashhod.online/delivery.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vashhod.online/delivery.html" />
+    <meta property="og:title" content="Оплата и доставка — Ваш Ход" />
+    <meta property="og:description" content="Условия оплаты и доставки настольных игр Ваш Ход." />
+    <meta property="og:image" content="https://vashhod.online/images/balansir/main.webp?v=3" />
+    <meta property="og:locale" content="ru_RU" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="stylesheet" href="css/style.css?v=6" />
+    <script src="js/metrika.js"></script>
+</head>
 <body>
 
   <!-- Header -->
@@ -88,9 +83,10 @@
           <div class="instruction-card">
             <h3>📦 Доставка</h3>
             <ul>
-              <li><strong>Почта России</strong> — от 300 ₽, 5–14 дней</li>
+              <li><strong>Почта России</strong> — от 350 ₽, 5–14 дней</li>
               <li><strong>СДЭК</strong> — до пункта выдачи от 350 ₽, 3–7 дней</li>
               <li><strong>Яндекс Доставка</strong> — до пункта выдачи от 250 ₽, 2–5 дней</li>
+              <li><strong>Boxberry</strong> — до пункта выдачи от 300 ₽, 3–7 дней</li>
               <li><strong>Самовывоз</strong> — по договорённости (Москва/МО)</li>
             </ul>
             <p style="margin-top:0.75rem;font-size:0.85rem;color:var(--color-text-muted);">
@@ -110,10 +106,19 @@
 
         <div class="instruction-block" id="deliveryCalculator">
           <h3>🧮 Калькулятор доставки</h3>
-          <p>Выберите регион — и сразу увидите примерную стоимость и сроки доставки.</p>
+          <p>Выберите игру и регион — и сразу увидите примерную стоимость и сроки доставки.</p>
 
-          <div class="form-row" style="margin-top:1.25rem; align-items: flex-end;">
-            <div class="form-group" style="margin-bottom:0; width: 100%; max-width: 420px;">
+          <div class="form-row" style="margin-top:1.25rem; align-items: flex-end; flex-wrap: wrap; gap: 1rem;">
+            <div class="form-group" style="margin-bottom:0; width: 100%; max-width: 300px;">
+              <label for="calcGame" class="form-label">Игра</label>
+              <select id="calcGame" class="form-control">
+                <option value="" disabled selected>Выберите игру</option>
+                <option value="balansir">Балансир (40×40×4 см)</option>
+                <option value="pilos">Пилос (40×40×4 см)</option>
+                <option value="elastik">Эластик (40×70×4 см)</option>
+              </select>
+            </div>
+            <div class="form-group" style="margin-bottom:0; width: 100%; max-width: 300px;">
               <label for="calcRegion" class="form-label">Регион доставки</label>
               <select id="calcRegion" class="form-control">
                 <option value="" disabled selected>Выберите регион</option>
@@ -144,6 +149,16 @@
                 <p class="calc-days" id="yandexDays" style="font-size:0.9rem;color:var(--color-text-secondary);margin:0;">—</p>
               </div>
               <div class="instruction-card">
+                <h3 style="font-size:1.1rem;">📦 Boxberry</h3>
+                <p class="calc-cost" id="boxberryCost" style="font-size:1.25rem;font-weight:700;color:var(--color-dark);margin:0.5rem 0;">—</p>
+                <p class="calc-days" id="boxberryDays" style="font-size:0.9rem;color:var(--color-text-secondary);margin:0;">—</p>
+              </div>
+              <div class="instruction-card">
+                <h3 style="font-size:1.1rem;">🛍️ Пункт выдачи Ozon / WB</h3>
+                <p class="calc-cost" id="wbCost" style="font-size:1.25rem;font-weight:700;color:var(--color-dark);margin:0.5rem 0;">—</p>
+                <p class="calc-days" id="wbDays" style="font-size:0.9rem;color:var(--color-text-secondary);margin:0;">—</p>
+              </div>
+              <div class="instruction-card">
                 <h3 style="font-size:1.1rem;">🏠 Самовывоз</h3>
                 <p class="calc-cost" id="pickupCost" style="font-size:1.25rem;font-weight:700;color:var(--color-dark);margin:0.5rem 0;">—</p>
                 <p class="calc-days" id="pickupDays" style="font-size:0.9rem;color:var(--color-text-secondary);margin:0;">—</p>
@@ -156,9 +171,31 @@
               Проверить стоимость самостоятельно:
               <a href="https://otpravka.pochta.ru/calculator" target="_blank" rel="noopener" style="color:var(--color-primary);text-decoration:underline;">Почта России</a>,
               <a href="https://www.cdek.ru/ru/calculate" target="_blank" rel="noopener" style="color:var(--color-primary);text-decoration:underline;">СДЭК</a>,
-              <a href="https://dostavka.yandex.ru/order/cargo/" target="_blank" rel="noopener" style="color:var(--color-primary);text-decoration:underline;">Яндекс Доставка</a>.
+              <a href="https://dostavka.yandex.ru/order/cargo/" target="_blank" rel="noopener" style="color:var(--color-primary);text-decoration:underline;">Яндекс Доставка</a>,
+              <a href="https://boxberry.ru/production/calculator" target="_blank" rel="noopener" style="color:var(--color-primary);text-decoration:underline;">Boxberry</a>.
             </p>
           </div>
+        </div>
+
+        <div class="instruction-block">
+          <h3>📦 Доставка нескольких игр</h3>
+          <p>Если вы заказываете несколько игр, мы отправим их одной посылкой. Стоимость доставки в этом случае будет ниже, чем за каждую игру по отдельности.</p>
+          <p style="margin-top:0.75rem;">Например, две игры в Москве вместо 700 ₽ могут стоить около 450–500 ₽.</p>
+        </div>
+
+        <div class="instruction-block">
+          <h3>🚚 Другие способы доставки</h3>
+          <p>Мы также можем отправить заказ любым удобным для вас способом:</p>
+          <ul style="margin-top:0.75rem;">
+            <li>Курьерская доставка по Москве (до двери)</li>
+            <li>Доставка в ваш город через DPD, Энергию, КИТ, Деловые Линии</li>
+            <li>Отправка транспортной компанией (для больших заказов)</li>
+            <li>Доставка в пункт выдачи Ozon, Wildberries</li>
+            <li>Другой способ — напишите нам, подберём оптимальный вариант</li>
+          </ul>
+          <p style="margin-top:0.75rem;font-size:0.85rem;color:var(--color-text-muted);">
+            Стоимость и сроки рассчитаем индивидуально при оформлении заказа.
+          </p>
         </div>
 
         <div class="instruction-block">
@@ -231,40 +268,131 @@
   <script>
     (function () {
       var DELIVERY_DATA = {
-        moscow: {
-          label: "Москва и Московская область",
-          post: { cost: 350, days: "3–5 дней" },
-          cdek: { cost: 450, days: "2–4 дня" },
-          yandex: { cost: 350, days: "1–3 дня" },
-          pickup: { cost: 0, days: "Бесплатно, по договорённости" },
+        balansir: {
+          moscow: {
+            post: { cost: 350, days: "3–5 дней" },
+            cdek: { cost: 350, days: "2–4 дня" },
+            yandex: { cost: 250, days: "1–3 дня" },
+            boxberry: { cost: 300, days: "2–4 дня" },
+            wb: { cost: 350, days: "2–4 дня" },
+            pickup: { cost: 0, days: "Бесплатно, по договорённости" },
+          },
+          spb: {
+            post: { cost: 400, days: "4–7 дней" },
+            cdek: { cost: 400, days: "3–5 дней" },
+            yandex: { cost: 300, days: "2–4 дня" },
+            boxberry: { cost: 350, days: "3–5 дней" },
+            wb: { cost: 400, days: "3–5 дней" },
+            pickup: { cost: null, days: "Недоступен" },
+          },
+          big: {
+            post: { cost: 450, days: "5–10 дней" },
+            cdek: { cost: 450, days: "3–6 дней" },
+            yandex: { cost: 350, days: "2–5 дней" },
+            boxberry: { cost: 400, days: "3–6 дней" },
+            wb: { cost: 450, days: "3–6 дней" },
+            pickup: { cost: null, days: "Недоступен" },
+          },
+          russia: {
+            post: { cost: 550, days: "7–14 дней" },
+            cdek: { cost: 550, days: "5–9 дней" },
+            yandex: { cost: 450, days: "4–7 дней" },
+            boxberry: { cost: 500, days: "5–8 дней" },
+            wb: { cost: 550, days: "5–8 дней" },
+            pickup: { cost: null, days: "Недоступен" },
+          },
+          far: {
+            post: { cost: 700, days: "10–21 день" },
+            cdek: { cost: 700, days: "7–12 дней" },
+            yandex: { cost: 600, days: "5–10 дней" },
+            boxberry: { cost: 650, days: "7–10 дней" },
+            wb: { cost: 700, days: "7–10 дней" },
+            pickup: { cost: null, days: "Недоступен" },
+          },
         },
-        spb: {
-          label: "Санкт-Петербург и Ленинградская область",
-          post: { cost: 450, days: "4–7 дней" },
-          cdek: { cost: 550, days: "3–5 дней" },
-          yandex: { cost: 450, days: "2–4 дня" },
-          pickup: { cost: null, days: "Недоступен" },
+        pilos: {
+          moscow: {
+            post: { cost: 350, days: "3–5 дней" },
+            cdek: { cost: 350, days: "2–4 дня" },
+            yandex: { cost: 250, days: "1–3 дня" },
+            boxberry: { cost: 300, days: "2–4 дня" },
+            wb: { cost: 350, days: "2–4 дня" },
+            pickup: { cost: 0, days: "Бесплатно, по договорённости" },
+          },
+          spb: {
+            post: { cost: 400, days: "4–7 дней" },
+            cdek: { cost: 400, days: "3–5 дней" },
+            yandex: { cost: 300, days: "2–4 дня" },
+            boxberry: { cost: 350, days: "3–5 дней" },
+            wb: { cost: 400, days: "3–5 дней" },
+            pickup: { cost: null, days: "Недоступен" },
+          },
+          big: {
+            post: { cost: 450, days: "5–10 дней" },
+            cdek: { cost: 450, days: "3–6 дней" },
+            yandex: { cost: 350, days: "2–5 дней" },
+            boxberry: { cost: 400, days: "3–6 дней" },
+            wb: { cost: 450, days: "3–6 дней" },
+            pickup: { cost: null, days: "Недоступен" },
+          },
+          russia: {
+            post: { cost: 550, days: "7–14 дней" },
+            cdek: { cost: 550, days: "5–9 дней" },
+            yandex: { cost: 450, days: "4–7 дней" },
+            boxberry: { cost: 500, days: "5–8 дней" },
+            wb: { cost: 550, days: "5–8 дней" },
+            pickup: { cost: null, days: "Недоступен" },
+          },
+          far: {
+            post: { cost: 700, days: "10–21 день" },
+            cdek: { cost: 700, days: "7–12 дней" },
+            yandex: { cost: 600, days: "5–10 дней" },
+            boxberry: { cost: 650, days: "7–10 дней" },
+            wb: { cost: 700, days: "7–10 дней" },
+            pickup: { cost: null, days: "Недоступен" },
+          },
         },
-        big: {
-          label: "Крупные города",
-          post: { cost: 550, days: "5–10 дней" },
-          cdek: { cost: 700, days: "3–6 дней" },
-          yandex: { cost: 600, days: "2–5 дней" },
-          pickup: { cost: null, days: "Недоступен" },
-        },
-        russia: {
-          label: "Остальная Россия",
-          post: { cost: 750, days: "7–14 дней" },
-          cdek: { cost: 950, days: "5–9 дней" },
-          yandex: { cost: 850, days: "4–7 дней" },
-          pickup: { cost: null, days: "Недоступен" },
-        },
-        far: {
-          label: "Дальний Восток, Север, Крым, Кавказ",
-          post: { cost: 1000, days: "10–21 день" },
-          cdek: { cost: 1300, days: "7–12 дней" },
-          yandex: { cost: 1200, days: "5–10 дней" },
-          pickup: { cost: null, days: "Недоступен" },
+        elastik: {
+          moscow: {
+            post: { cost: 450, days: "3–5 дней" },
+            cdek: { cost: 450, days: "2–4 дня" },
+            yandex: { cost: 350, days: "1–3 дня" },
+            boxberry: { cost: 400, days: "2–4 дня" },
+            wb: { cost: 450, days: "2–4 дня" },
+            pickup: { cost: 0, days: "Бесплатно, по договорённости" },
+          },
+          spb: {
+            post: { cost: 500, days: "4–7 дней" },
+            cdek: { cost: 500, days: "3–5 дней" },
+            yandex: { cost: 400, days: "2–4 дня" },
+            boxberry: { cost: 450, days: "3–5 дней" },
+            wb: { cost: 500, days: "3–5 дней" },
+            pickup: { cost: null, days: "Недоступен" },
+          },
+          big: {
+            post: { cost: 550, days: "5–10 дней" },
+            cdek: { cost: 550, days: "3–6 дней" },
+            yandex: { cost: 450, days: "2–5 дней" },
+            boxberry: { cost: 500, days: "3–6 дней" },
+            wb: { cost: 550, days: "3–6 дней" },
+            pickup: { cost: null, days: "Недоступен" },
+          },
+          russia: {
+            post: { cost: 650, days: "7–14 дней" },
+            cdek: { cost: 650, days: "5–9 дней" },
+            yandex: { cost: 550, days: "4–7 дней" },
+            boxberry: { cost: 600, days: "5–8 дней" },
+            wb: { cost: 650, days: "5–8 дней" },
+            pickup: { cost: null, days: "Недоступен" },
+          },
+          far: {
+            post: { cost: 900, days: "10–21 день" },
+            cdek: { cost: 900, days: "7–12 дней" },
+            yandex: { cost: 800, days: "5–10 дней" },
+            boxberry: { cost: 850, days: "7–10 дней" },
+            wb: { cost: 900, days: "7–10 дней" },
+            pickup: { cost: null, days: "Недоступен" },
+          },
         },
       };
 
@@ -275,30 +403,36 @@
       }
 
       function calculate() {
+        var game = document.getElementById("calcGame").value;
         var region = document.getElementById("calcRegion").value;
         var resultBlock = document.getElementById("calcResult");
-        if (!region || !DELIVERY_DATA[region]) {
+
+        if (!game || !region || !DELIVERY_DATA[game] || !DELIVERY_DATA[game][region]) {
           resultBlock.style.display = "none";
           return;
         }
 
-        var data = DELIVERY_DATA[region];
+        var data = DELIVERY_DATA[game][region];
         document.getElementById("postCost").textContent = formatCost(data.post.cost);
         document.getElementById("postDays").textContent = data.post.days;
         document.getElementById("cdekCost").textContent = formatCost(data.cdek.cost);
         document.getElementById("cdekDays").textContent = data.cdek.days;
         document.getElementById("yandexCost").textContent = formatCost(data.yandex.cost);
         document.getElementById("yandexDays").textContent = data.yandex.days;
+        document.getElementById("boxberryCost").textContent = formatCost(data.boxberry.cost);
+        document.getElementById("boxberryDays").textContent = data.boxberry.days;
+        document.getElementById("wbCost").textContent = formatCost(data.wb.cost);
+        document.getElementById("wbDays").textContent = data.wb.days;
         document.getElementById("pickupCost").textContent = formatCost(data.pickup.cost);
         document.getElementById("pickupDays").textContent = data.pickup.days;
 
         resultBlock.style.display = "block";
       }
 
+      var calcGame = document.getElementById("calcGame");
       var calcRegion = document.getElementById("calcRegion");
-      if (calcRegion) {
-        calcRegion.addEventListener("change", calculate);
-      }
+      if (calcGame) calcGame.addEventListener("change", calculate);
+      if (calcRegion) calcRegion.addEventListener("change", calculate);
     })();
   </script>
 </body>
