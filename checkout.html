@@ -213,142 +213,207 @@
                                     class="product-options"
                                     id="productOptions"
                                 >
-                                    <label class="product-option">
-                                        <input
-                                            type="checkbox"
-                                            name="products"
-                                            value="Балансир"
-                                            data-price="2799"
-                                        />
-                                        <span
-                                            class="product-option-check"
-                                        ></span>
-                                        <span class="product-option-info">
-                                            <span class="product-option-name"
-                                                >Балансир</span
-                                            >
-                                            <span class="product-option-price"
-                                                >2 799 ₽
-                                                <small
-                                                    style="
-                                                        color: #c94b4b;
-                                                        font-size: 0.75rem;
-                                                        margin-left: 0.5rem;
-                                                    "
-                                                    >Осталось 12 шт.</small
-                                                ></span
-                                            >
-                                        </span>
-                                    </label>
-                                    <label class="product-option">
-                                        <input
-                                            type="checkbox"
-                                            name="products"
-                                            value="Пилос"
-                                            data-price="2990"
-                                        />
-                                        <span
-                                            class="product-option-check"
-                                        ></span>
-                                        <span class="product-option-info">
-                                            <span class="product-option-name"
-                                                >Пилос</span
-                                            >
-                                            <span class="product-option-price"
-                                                >2 990 ₽
-                                                <small
-                                                    style="
-                                                        color: #c94b4b;
-                                                        font-size: 0.75rem;
-                                                        margin-left: 0.5rem;
-                                                    "
-                                                    >Осталось 18 шт.</small
-                                                ></span
-                                            >
-                                        </span>
-                                    </label>
-                                    <label class="product-option">
-                                        <input
-                                            type="checkbox"
-                                            name="products"
-                                            value="Балансир + Пилос (комплект)"
-                                            data-price="5390"
-                                        />
-                                        <span
-                                            class="product-option-check"
-                                        ></span>
-                                        <span class="product-option-info">
-                                            <span class="product-option-name"
-                                                >Балансир + Пилос
-                                                (комплект)</span
-                                            >
-                                            <span class="product-option-price"
-                                                >5 390 ₽
-                                                <small
-                                                    style="
-                                                        color: #c94b4b;
-                                                        font-size: 0.75rem;
-                                                        margin-left: 0.5rem;
-                                                    "
-                                                    >Осталось 10 шт.</small
-                                                ></span
-                                            >
-                                        </span>
-                                    </label>
-                                    <label class="product-option">
-                                        <input
-                                            type="checkbox"
-                                            name="products"
-                                            value="Все 3 игры (комплект)"
-                                            data-price="8190"
-                                        />
-                                        <span
-                                            class="product-option-check"
-                                        ></span>
-                                        <span class="product-option-info">
-                                            <span class="product-option-name"
-                                                >Все 3 игры (комплект)</span
-                                            >
-                                            <span class="product-option-price"
-                                                >8 190 ₽
-                                                <small
-                                                    style="
-                                                        color: #c94b4b;
-                                                        font-size: 0.75rem;
-                                                        margin-left: 0.5rem;
-                                                    "
-                                                    >Осталось 8 шт.</small
-                                                ></span
-                                            >
-                                        </span>
-                                    </label>
-                                    <label class="product-option">
-                                        <input
-                                            type="checkbox"
-                                            name="products"
-                                            value="Эластик"
-                                            data-price="3099"
-                                        />
-                                        <span
-                                            class="product-option-check"
-                                        ></span>
-                                        <span class="product-option-info">
-                                            <span class="product-option-name"
-                                                >Эластик</span
-                                            >
-                                            <span class="product-option-price"
-                                                >3 099 ₽
-                                                <small
-                                                    style="
-                                                        color: #c94b4b;
-                                                        font-size: 0.75rem;
-                                                        margin-left: 0.5rem;
-                                                    "
-                                                    >Осталось 15 шт.</small
-                                                ></span
-                                            >
-                                        </span>
-                                    </label>
+                                    <div
+                                        class="product-option-row"
+                                        style="
+                                            display: flex;
+                                            gap: 0.5rem;
+                                            align-items: stretch;
+                                        "
+                                    >
+                                        <label
+                                            class="product-option"
+                                            style="flex: 1"
+                                        >
+                                            <input
+                                                type="checkbox"
+                                                name="products"
+                                                value="Балансир"
+                                                data-price="2900"
+                                                data-price-bulk="2300"
+                                            />
+                                            <span
+                                                class="product-option-check"
+                                            ></span>
+                                            <span class="product-option-info">
+                                                <span
+                                                    class="product-option-name"
+                                                    >Балансир</span
+                                                >
+                                                <span
+                                                    class="product-option-price"
+                                                    ><span
+                                                        class="unit-price-value"
+                                                        >2 900</span
+                                                    >
+                                                    ₽/шт.
+                                                    <small
+                                                        class="bulk-note"
+                                                        style="
+                                                            color: var(
+                                                                --color-success
+                                                            );
+                                                            font-size: 0.75rem;
+                                                            margin-left: 0.5rem;
+                                                            display: none;
+                                                        "
+                                                        >цена от 10 шт.</small
+                                                    ></span
+                                                >
+                                            </span>
+                                        </label>
+                                        <select
+                                            class="form-select product-qty"
+                                            aria-label="Количество — Балансир"
+                                            style="
+                                                width: 100px;
+                                                flex-shrink: 0;
+                                                display: none;
+                                            "
+                                        ></select>
+                                    </div>
+                                    <div
+                                        class="product-option-row"
+                                        style="
+                                            display: flex;
+                                            gap: 0.5rem;
+                                            align-items: stretch;
+                                        "
+                                    >
+                                        <label
+                                            class="product-option"
+                                            style="flex: 1"
+                                        >
+                                            <input
+                                                type="checkbox"
+                                                name="products"
+                                                value="Пилос"
+                                                data-price="2900"
+                                                data-price-bulk="2300"
+                                            />
+                                            <span
+                                                class="product-option-check"
+                                            ></span>
+                                            <span class="product-option-info">
+                                                <span
+                                                    class="product-option-name"
+                                                    >Пилос</span
+                                                >
+                                                <span
+                                                    class="product-option-price"
+                                                    ><span
+                                                        class="unit-price-value"
+                                                        >2 900</span
+                                                    >
+                                                    ₽/шт.
+                                                    <small
+                                                        class="bulk-note"
+                                                        style="
+                                                            color: var(
+                                                                --color-success
+                                                            );
+                                                            font-size: 0.75rem;
+                                                            margin-left: 0.5rem;
+                                                            display: none;
+                                                        "
+                                                        >цена от 10 шт.</small
+                                                    ></span
+                                                >
+                                            </span>
+                                        </label>
+                                        <select
+                                            class="form-select product-qty"
+                                            aria-label="Количество — Пилос"
+                                            style="
+                                                width: 100px;
+                                                flex-shrink: 0;
+                                                display: none;
+                                            "
+                                        ></select>
+                                    </div>
+                                    <div
+                                        class="product-option-row"
+                                        style="
+                                            display: flex;
+                                            gap: 0.5rem;
+                                            align-items: stretch;
+                                        "
+                                    >
+                                        <label
+                                            class="product-option"
+                                            style="flex: 1"
+                                        >
+                                            <input
+                                                type="checkbox"
+                                                name="products"
+                                                value="Эластик"
+                                                data-price="3600"
+                                                data-price-bulk="2900"
+                                            />
+                                            <span
+                                                class="product-option-check"
+                                            ></span>
+                                            <span class="product-option-info">
+                                                <span
+                                                    class="product-option-name"
+                                                    >Эластик</span
+                                                >
+                                                <span
+                                                    class="product-option-price"
+                                                    ><span
+                                                        class="unit-price-value"
+                                                        >3 600</span
+                                                    >
+                                                    ₽/шт.
+                                                    <small
+                                                        class="bulk-note"
+                                                        style="
+                                                            color: var(
+                                                                --color-success
+                                                            );
+                                                            font-size: 0.75rem;
+                                                            margin-left: 0.5rem;
+                                                            display: none;
+                                                        "
+                                                        >цена от 10 шт.</small
+                                                    ></span
+                                                >
+                                            </span>
+                                        </label>
+                                        <select
+                                            class="form-select product-qty"
+                                            aria-label="Количество — Эластик"
+                                            style="
+                                                width: 100px;
+                                                flex-shrink: 0;
+                                                display: none;
+                                            "
+                                        ></select>
+                                    </div>
+                                </div>
+                                <p
+                                    style="
+                                        font-size: 0.8rem;
+                                        color: var(--color-text-muted);
+                                        margin-top: 0.5rem;
+                                    "
+                                >
+                                    При заказе от 10 штук одной игры действует
+                                    скидочная цена: Балансир и Пилос — 2 300
+                                    ₽/шт., Эластик — 2 900 ₽/шт.
+                                </p>
+                                <div
+                                    id="formTotal"
+                                    style="
+                                        display: none;
+                                        margin-top: 0.75rem;
+                                        font-family: var(--font-display);
+                                        font-size: 1.1rem;
+                                        color: var(--color-dark);
+                                    "
+                                >
+                                    Итого:
+                                    <span id="formTotalValue">0 ₽</span>
                                 </div>
                                 <div class="form-error" id="productsError">
                                     Выберите хотя бы одну игру
@@ -989,6 +1054,73 @@
                 var addressInput = document.getElementById("address");
                 var messageInput = document.getElementById("message");
 
+                // =========================================================
+                // Quantity selection (1–50) and volume pricing
+                // =========================================================
+                var BULK_QTY_THRESHOLD = 10; // от 10 шт. — скидочная цена
+
+                function fillQtyOptions(select) {
+                    for (var i = 1; i <= 50; i++) {
+                        var opt = document.createElement("option");
+                        opt.value = i;
+                        opt.textContent = i + " шт.";
+                        select.appendChild(opt);
+                    }
+                }
+
+                function getQtySelect(cb) {
+                    var row = cb.closest(".product-option-row");
+                    return row ? row.querySelector(".product-qty") : null;
+                }
+
+                function getQty(cb) {
+                    var select = getQtySelect(cb);
+                    var qty = select ? parseInt(select.value, 10) : 1;
+                    return qty >= 1 && qty <= 50 ? qty : 1;
+                }
+
+                function getUnitPrice(cb, qty) {
+                    var base = parseInt(cb.getAttribute("data-price"), 10);
+                    var bulk = parseInt(
+                        cb.getAttribute("data-price-bulk"),
+                        10,
+                    );
+                    if (qty >= BULK_QTY_THRESHOLD && !isNaN(bulk)) {
+                        return bulk;
+                    }
+                    return base;
+                }
+
+                function updateUnitPriceDisplay(cb) {
+                    var row = cb.closest(".product-option-row");
+                    if (!row) return;
+                    var qty = getQty(cb);
+                    var unit = getUnitPrice(cb, qty);
+                    var priceSpan = row.querySelector(".unit-price-value");
+                    if (priceSpan) {
+                        priceSpan.textContent = unit.toLocaleString("ru-RU");
+                    }
+                    var note = row.querySelector(".bulk-note");
+                    if (note) {
+                        note.style.display =
+                            qty >= BULK_QTY_THRESHOLD ? "inline" : "none";
+                    }
+                }
+
+                function updateFormTotal() {
+                    var wrap = document.getElementById("formTotal");
+                    var value = document.getElementById("formTotalValue");
+                    if (!wrap || !value) return;
+                    var data = getSelectedProducts();
+                    if (data.total > 0) {
+                        wrap.style.display = "block";
+                        value.textContent =
+                            data.total.toLocaleString("ru-RU") + " ₽";
+                    } else {
+                        wrap.style.display = "none";
+                    }
+                }
+
                 function showError(id, show) {
                     var el = document.getElementById(id);
                     if (el) {
@@ -1052,23 +1184,30 @@
                 function getSelectedProducts() {
                     var products = [];
                     var names = [];
+                    var quantities = [];
+                    var totalQty = 0;
                     productCheckboxes.forEach(function (cb) {
                         if (cb.checked) {
+                            var qty = getQty(cb);
+                            var unitPrice = getUnitPrice(cb, qty);
                             products.push({
                                 name: cb.value,
-                                price: parseInt(
-                                    cb.getAttribute("data-price"),
-                                    10,
-                                ),
+                                qty: qty,
+                                price: unitPrice,
+                                subtotal: unitPrice * qty,
                             });
-                            names.push(cb.value);
+                            names.push(cb.value + " ×" + qty);
+                            quantities.push(cb.value + ": " + qty + " шт.");
+                            totalQty += qty;
                         }
                     });
                     return {
                         items: products,
                         names: names,
+                        quantities: quantities,
+                        totalQty: totalQty,
                         total: products.reduce(function (s, p) {
-                            return s + p.price;
+                            return s + p.subtotal;
                         }, 0),
                     };
                 }
@@ -1098,10 +1237,14 @@
                         html +=
                             '<span style="color:var(--color-main);">' +
                             p.name +
-                            "</span>";
+                            " × " +
+                            p.qty +
+                            ' шт. <small style="color:var(--color-text-muted);">по ' +
+                            p.price.toLocaleString("ru-RU") +
+                            " ₽</small></span>";
                         html +=
                             '<span style="font-weight:600; color:var(--color-dark);">' +
-                            p.price.toLocaleString("ru-RU") +
+                            p.subtotal.toLocaleString("ru-RU") +
                             " ₽</span>";
                         html += "</div>";
                     });
@@ -1235,6 +1378,7 @@
                         address: addressInput.value.trim(),
                         games: data.names.join(", "),
                         total: data.total.toLocaleString("ru-RU") + " ₽",
+                        quantity: data.quantities.join(", "),
                         comment: fullComment,
                     };
 
@@ -1251,6 +1395,7 @@
                                     id: currentOrderId,
                                     amount: data.total,
                                     games: data.names.join(", "),
+                                    quantity: data.quantities.join(", "),
                                     date: new Date().toLocaleString("ru-RU"),
                                 }),
                             );
@@ -1391,8 +1536,41 @@
                 productCheckboxes.forEach(function (cb) {
                     cb.addEventListener("change", function () {
                         showError("productsError", false);
+                        var select = getQtySelect(this);
+                        if (select) {
+                            select.style.display = this.checked
+                                ? "block"
+                                : "none";
+                        }
+                        updateFormTotal();
                     });
                 });
+
+                document
+                    .querySelectorAll(".product-qty")
+                    .forEach(function (select) {
+                        select.addEventListener("change", function () {
+                            var row = this.closest(".product-option-row");
+                            var cb = row
+                                ? row.querySelector('input[name="products"]')
+                                : null;
+                            if (cb) {
+                                updateUnitPriceDisplay(cb);
+                            }
+                            updateFormTotal();
+                        });
+                    });
+
+                // Init: fill quantity selects (1–50) and sync with checked state
+                productCheckboxes.forEach(function (cb) {
+                    var select = getQtySelect(cb);
+                    if (select) {
+                        fillQtyOptions(select);
+                        select.style.display = cb.checked ? "block" : "none";
+                    }
+                    updateUnitPriceDisplay(cb);
+                });
+                updateFormTotal();
 
                 // "I paid" button handler (if present)
                 var btnPaymentDone = document.getElementById("btnPaymentDone");
